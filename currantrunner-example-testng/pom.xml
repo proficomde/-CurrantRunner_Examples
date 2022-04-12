@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>de.proficom</groupId>
+	<artifactId>CalculatorTestNG</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>CurrantRunner (TestNG) Maven :: Example TestNG unit tests</name>
+
+	<!-- CurrantRunner -->
+	<!-- This will add TestNG and other libraries and plugins for test prioritization -->
+	<parent>
+		<groupId>de.proficom.currantrunner</groupId>
+		<artifactId>currantrunner-testng-maven</artifactId>
+		<version>0.0.1</version>
+	</parent>
+
+	<licenses>
+		<license>
+			<name>BSD 2-Clause License</name>
+			<url>https://choosealicense.com/licenses/bsd-2-clause/</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<organization>
+		<name>proficom GmbH</name>
+		<url>https://www.proficom.de</url>
+	</organization>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<dependencies>
+		<!-- Tested classes -->
+		<dependency>
+			<groupId>de.proficom</groupId>
+			<artifactId>Calculator</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<!-- Following plugin executes the testng tests -->
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>suites/testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

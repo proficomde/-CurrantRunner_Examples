@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.proficom</groupId>
+	<artifactId>Calculator</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>CurrantRunner (TestNG) Maven :: Example sources for unit tests</name>
+	<packaging>jar</packaging>
+
+	<licenses>
+		<license>
+			<name>BSD 2-Clause License</name>
+			<url>https://choosealicense.com/licenses/bsd-2-clause/</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<organization>
+		<name>proficom GmbH</name>
+		<url>https://www.proficom.de</url>
+	</organization>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<exec.mainClass>de.proficom.Main</exec.mainClass>
+  </properties>
+</project>
