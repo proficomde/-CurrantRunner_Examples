@@ -1,8 +1,6 @@
 package de.proficom;
 
 public class Calculator {
-
-	// task 1: execute and fix the calculator, there are 2 wrong calculations inside the functions.
 	
 	/**
 	 * Calculate SUM of A and B
